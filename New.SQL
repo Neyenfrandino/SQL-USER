@@ -21,3 +21,12 @@ alter table users add apellido varchar (100);
 
 delete from users where id = 2 ;
 delete from users where id = 3;
+
+# esto es para domicar la estructura de la table
+alter table users modify column edad int (35);
+
+
+#actualizar un registo de las columnas especificas 
+update users set edad = '35' where id = 1; 
+
+
