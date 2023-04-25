@@ -26,5 +26,15 @@ values
     
     select u.id, u.name, p.name from users u inner join product p on u.id=p.created_by;
     
+    select count(id), marca from product group by marca;
     
+    select count(p.id), u.name from product p left join users u on u.id=p.created_by group by p.created_by;
+    
+    select count(p.id), u.name from product p left join users u on u.id=p.created_by group by p.created_by
+    having count(p.id) >=2;
+    
+    drop table product;
+    drop table users;
+    drop table product;
+    drop table animalees;
     
