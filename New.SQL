@@ -23,3 +23,4 @@ values
     select u.id, u.name, p.name from users u left join product p on u.id=p.created_by;
     
     
+    
