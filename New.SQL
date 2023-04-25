@@ -20,7 +20,11 @@ values
     select * from product;
     
     #left join cruzando las tablas de id de users(u) con la de created_by (id) de producto(P). 
-    select u.id, u.name, p.name from users u left join product p on u.id=p.created_by;
+    select u.id, u.email, p.name from users u left join product p on u.id=p.created_by;
+    
+    select u.id, u.name, p.name from users u right join product p on u.id=p.created_by;
+    
+    select u.id, u.name, p.name from users u inner join product p on u.id=p.created_by;
     
     
     
